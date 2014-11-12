@@ -48,6 +48,6 @@ This is not intended for production use as this will deliberately drop tables wi
 
 ## Author
 
-[Jonathan Discipulo](http://jondiscipulo.com/)
+[Jon Discipulo](http://jondiscipulo.com/)
 
 
