@@ -19,21 +19,10 @@ Edit `app/commands/DropTables.php` and change the `$tables` array with your data
 
     protected $tables = [
         'assigned_roles',
-        'channel_genre',
-        'channels',
-        'genres',
-        'migrations',
-        'package_channel',
-        'packages',
         'password_reminders',
         'permission_role',
         'permissions',
-        'presses',
-        'promo_location',
-        'promos',
         'roles',
-        'user_accounts',
-        'user_details',
         'users',
     ];
 
