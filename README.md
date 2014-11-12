@@ -15,7 +15,7 @@ Add this line to your `app/start/artisan.php`:
     Artisan::add(new DropTables);
 
 
-Edit DropTables.php and change the $tables array with your database table names.
+Edit `app/commands/DropTables.php` and change the `$tables` array with your database table names.
 
     protected $tables = [
         'assigned_roles',
