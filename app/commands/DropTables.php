@@ -21,31 +21,12 @@ class DropTables extends Command {
 	protected $description = 'Drop pre-determined tables from the database.';
     
     protected $tables = [
-        'aliases',
         'assigned_roles',
-        'channel_genre',
-        'channels',
-        'freeviews',
-        'genres',
-        'locations',
-        'migrations',
-        'package_channel',
-        'packages',
-        'pages',
         'password_reminders',
-        'payperviews',
         'permission_role',
         'permissions',
-        'presses',
-        'promo_location',
-        'promos',
         'roles',
-        'schedules',
-        'sessions',
-        'user_accounts',
-        'user_details',
         'users',
-        'widgets',    
     ];
 
 	/**
