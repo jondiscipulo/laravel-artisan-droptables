@@ -1,10 +1,10 @@
 php artisan drop:tables
 =======================
 
-Artisan Command for Laravel 4.2 that drops pre-determined tables. This will solve the problem of foreign key constraint problems when deleting tables with foreign keys.
+Artisan Command for Laravel 4.2 that drops pre-determined tables. This solves foreign key constraint problems when deleting tables with foreign keys.
 
 
-##Steps
+## Steps
 
 Copy app/commands/DropTables.php to your project app/commands directory.
 
@@ -35,10 +35,22 @@ Edit DropTables.php and change the $tables array with your database table names.
         'users',
     ];
 
-4. Save changes to DropTables.php
 
-5. Run the artisan command:
+Run the artisan command:
 
     php artisan drop:tables
     
     
+Enjoy!
+
+
+## Disclaimer
+
+This is not intended for production use as this will literally drop tables with or without data.
+
+
+## Author
+
+[Jonathan Discipulo](http://jondiscipulo.com/)
+
+
