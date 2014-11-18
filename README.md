@@ -9,20 +9,17 @@ Artisan Command for Laravel 4.2 that drops pre-determined tables. This solves fo
 Practical use of this is after migrating and seeding. Along with several updates, you want to drop the tables, with and without foreign keys, so you can freshly migrate and seed again.
 
 
-* Copy `DropTables.php` to your project directory:
-
+Copy `DropTables.php` to your project directory:
 
     app/commands/DropTables.php
 
 
-* Add this line to your `app/start/artisan.php`:
-
+Add this line to your `app/start/artisan.php`:
 
     Artisan::add(new DropTables);
 
 
-* Edit `app/commands/DropTables.php` and change the `$tables` array with the names of your database tables you want dropped.
-
+Edit `app/commands/DropTables.php` and change the `$tables` array with the names of your database tables you want dropped.
 
     protected $tables = [
         'assigned_roles',
@@ -34,8 +31,7 @@ Practical use of this is after migrating and seeding. Along with several updates
     ];
 
 
-* Run the artisan command:
-
+Run the artisan command:
 
     php artisan drop:tables
 
