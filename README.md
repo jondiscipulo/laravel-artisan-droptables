@@ -1,5 +1,10 @@
-php artisan drop:tables
-=======================
+Drop Tables: Artisan Command for Laravel 4.2
+============================================
+
+
+    php artisan drop:tables
+    
+
 
 Artisan Command for Laravel 4.2 that drops pre-determined tables. This solves foreign key constraint problems when deleting tables with foreign keys.
 
@@ -10,17 +15,17 @@ Practical use of this is after migrating and seeding then after several updates 
 
 ## Steps
 
-Copy `DropTables.php` to your project directory:
+1. Copy `DropTables.php` to your project directory:
 
     app/commands/DropTables.php
 
 
-Add this line to your `app/start/artisan.php`:
+2. Add this line to your `app/start/artisan.php`:
 
     Artisan::add(new DropTables);
 
 
-Edit `app/commands/DropTables.php` and change the `$tables` array with the names of your database tables you want dropped.
+3. Edit `app/commands/DropTables.php` and change the `$tables` array with the names of your database tables you want dropped.
 
     protected $tables = [
         'assigned_roles',
@@ -32,7 +37,7 @@ Edit `app/commands/DropTables.php` and change the `$tables` array with the names
     ];
 
 
-Run the artisan command:
+4. Run the artisan command:
 
     php artisan drop:tables
 
