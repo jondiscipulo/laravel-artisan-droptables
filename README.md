@@ -8,7 +8,7 @@ Drop Tables: Artisan Command for Laravel 4.2
 
 Artisan Command for Laravel 4.2 that drops pre-determined tables. This solves foreign key constraint problems when deleting tables with foreign keys.
 
-Practical use of this is after migrating and seeding then after several updates you want to drop the tables so you can freshly migrate and seed again.
+Practical use of this is after migrating and seeding. Along with several updates, you want to drop the tables, with and without foreign keys, so you can freshly migrate and seed again.
 
 
 
